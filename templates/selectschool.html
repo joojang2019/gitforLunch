@@ -1,0 +1,17 @@
+<ion-view title="Select your School" id="page5">
+  <ion-content padding="true" class="has-header">
+    <h1 id="selectschool-heading1" style="color:#000000;">School Name</h1>
+    <div class="spacer" style="width: 300px; height: 50px;"></div>
+    <form id="selectschool-form4" class="list">
+      <label class="item item-select" id="selectschool-select1">
+        <span class="input-label">Select</span>
+        <select ng-model="school2">
+          <option val="0">Northwestern</option>
+          <option val="1">University of Chicago</option>
+          <option val="2">UIUC</option>
+        </select>
+      </label>
+    </form>
+    <button id="selectschool-button6" ui-sref="schoolName({schoolId:school2})" class="button button-positive  button-block">I'm all set!</button>
+  </ion-content>
+</ion-view>
